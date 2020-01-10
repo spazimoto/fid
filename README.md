@@ -1,2 +1,2 @@
 # fid
-fundamentals of interactive design
+This repository is intended to house all of the assignments a future projects that I'll be undertaking during this semester in Fundamentals of Interactive Design.
