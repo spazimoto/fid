@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" >
    <title>Blackstone Bistro: Pizza-on-Demand</title>
-   <style type="css">
+   <style>
       ol, ul {
      list-style-type: none;
       }
@@ -43,14 +43,11 @@
 </head>
 
     <body>
-      <div class="intro">
     <h1>Blackstone Bistro | Pizza-on-Demand</h1>
 
     <p>Our 12" wood-fired pizzas are available for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
-      </div>
       <img src="images/cheese.jpg" alt="pizza banner">
     <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
-      <div class="form">
           <legend>Your Information</legend>
             <ul>
               <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
@@ -61,11 +58,11 @@
                 <textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long." id="form-instructions"></textarea>
               </li>
             </ul>
-      </div>
+
 
 
             <h2>Design Your Dream Pizza:</h2>
-        <div class="form">
+
             <legend>Pizza Specs</legend>
 
             <legend>Crust <em>(Choose one)</em>:</legend>
@@ -88,13 +85,14 @@
             </ul>
 
             <legend>Number</legend>
-            <legend>How many pizzas? <select name="pizzas" size="1"></legend>
+            <legend>How many pizzas?</legend> 
+                <select name="pizzas" size="1">
               <option>1</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
-            </select>
-      </div>
+                 </select>
+
             <p><input type="submit" value="Bring me a pizza!"> <input type="reset"></p><br>
       <p><a href="index.html">Back to the Homepage</a></p>
 
