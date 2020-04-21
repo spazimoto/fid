@@ -7,14 +7,22 @@
                 font-family: sans-serif;
                 margin: 2em 6em;
               }
-              h2 {
+              body {
+                background-color: #fcd688;
+              }
+              h1 {
+                text-align: center;
+                font-family: serif;
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+              h2, h3, h4 {
                 margin: 5px;
+                color: #d1633c;
+                box-sizing: border-box;
               }
               h3 {
-                margin: 5px;
-              }
-              h4 {
-                margin: 5px;
+                border-bottom: 1px solid #d18441;
               }
               p {
                 margin: 3px;
@@ -22,24 +30,33 @@
               footer {
                 font-size: small;
                 margin: 3em;
+                text-align: center;
               }
               small {
                 margin: 1em;
+              }
+              .las, dl {
+                box-sizing: border-box;
+                background-color: #ffe4ad;
+                border: dashed 5px #e0a558;
+                padding: 20px;
+              }
+              .about {
+                text-align: center;
+              }
+              .navigation {
+                text-align: center;
+                font-size: 1.15em;
               }
           </style>
     </head>
 
     <body>
-          <h1>The Black Goose Bistro News</h1>
-            <nav class="food">
-              <ul>
-                <li class="food"><a href="https://spazimoto.github.io/fid/blackgoose/">Home</a></li>
-                <li class="food"><a href="https://spazimoto.github.io/fid/blackgoose/jenskitchen/about.html">About</a></li>
-                <li class="food"><a href="https://spazimoto.github.io/fid/blackgoose/jenskitchen/">Menu</a></li>
-                <li class="food"><a href="https://spazimoto.github.io/fid/blackgoose/inline.html">Blog</a></li>
-                <li class="food"><a href="mailto:blackgoose@example.com">Contact</a></li>
-              </ul>
-      </nav>
+      <div class="navigation">
+        <a href="https://spazimoto.github.io/fid/blackgoose/">Home</a> <label> | </label> <a href="https://spazimoto.github.io/fid/blackgoose/jenskitchen/about.html">About</a> <label> | </label> <a href="https://spazimoto.github.io/fid/blackgoose/jenskitchen/">Menu</a> <label> | </label> <a href="https://spazimoto.github.io/fid/blackgoose/inline.html">Blog</a> <label> | </label> <a href="mailto:blackgoose@example.com">Contact</a>
+    </div>
+          <h1><label>The Black Goose Bistro News</label></h1>
+      <hr>
         <article>
           <h2>Summer Menu Items</h2>
               <small>posted by BGB, <time datetime="2017-06-18">June 18, 2017</time></small>
@@ -79,9 +96,11 @@
         <article>
             <h2>Low and Slow</h2>
                 <small>posted by BGB, <time datetime="2016-11-15">November 15, 2016</time></small>
+            <div class="las">
                 <p>This week I am <em>extremely</em> about a new cooking technique called <dfn><i>sous vide</i></dfn>. In <i>sous vide</i> cooking, you submerge the food (usually vacuum-sealed in plastic) into a water bath that is precisely set to the target temperature you want the food to be cooked to. In his book, <cite>Cooking for Geeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature poaching</q>.</p>
             <br>
                 <p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with Dill Hollandaise.</b> To reserve a seat at the chef table, contact us before <time datetime="2016-11-30">November 30</time>.</p>
+            </div>
             <br>
               <div class="about">
                 <p>Location: Baker's Corner, Seekonk, MA</p>
