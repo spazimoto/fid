@@ -17,9 +17,13 @@
        width: 50%;
      }
      h1 {
-       color: #d46d24;
+       color: #000000;
+       font-family: serif;
+       font-style: bold;
+       text-transform: uppercase;
        border-bottom: 1px solid #d46d24;
        margin-left: 50px;
+       padding-top: 30px;
      }
      p {
        color: #d46d24;
@@ -34,7 +38,7 @@
        border: thick double;
        border-style: 2px solid blue;
      }
-     
+
    </style>
 </head>
 
@@ -46,6 +50,7 @@
       </div>
       <img src="images/cheese.jpg" alt="pizza banner">
     <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
+      <div class="form">
       <fieldset>
           <legend>Your Information</legend>
             <ul>
@@ -58,9 +63,11 @@
               </li>
             </ul>
         </fieldset>
+      </div>
 
 
             <h2>Design Your Dream Pizza:</h2>
+        <div class="form">
         <fieldset>
             <legend>Pizza Specs</legend>
 
@@ -91,9 +98,10 @@
               <option>4</option>
             </select>
         </fieldset>
+      </div>
             <p><input type="submit" value="Bring me a pizza!"> <input type="reset"></p><br>
       <p><a href="index.html">Back to the Homepage</a></p>
-      
+
     </form>
 
   </body>
