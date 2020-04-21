@@ -49,6 +49,7 @@
       <img src="images/cheese.jpg" alt="pizza banner">
     <form action="http://www.blackgoosebistro.com/pizza.php" method="POST">
           <legend>Your Information</legend>
+      <fieldset>
             <ul>
               <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
               <li><label for="form-address">Address:</label> <input type="text" name="customeraddress" id="form-address"></li>
@@ -58,6 +59,7 @@
                 <textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long." id="form-instructions"></textarea>
               </li>
             </ul>
+      </fieldset>
 
 
 
@@ -66,14 +68,17 @@
             <legend>Pizza Specs</legend>
 
             <legend>Crust <em>(Choose one)</em>:</legend>
+      <fieldset>
             <ul>
               <li><label><input type="radio" name="crust" value="white">Classic white</label></li>
               <li><label><input type="radio" name="crust" value="multigrain">Multigrain</label></li>
               <li><label><input type="radio" name="crust" value="cheese">Cheese-stuffed crust</label></li>
               <li><label><input type="radio" name="crust" value="gluten">Gluten-free</label></li>
             </ul>
+      </fieldset>
 
             <legend>Toppings <em>(Choose as many as you want)</em>:</legend>
+      <fieldset>
             <ul>
               <li><label><input type="checkbox" name="toppings" value="red" checked>Red sauce</label></li>
               <li><label><input type="checkbox" name="toppings" value="white">White sauce</label></li>
@@ -83,6 +88,7 @@
               <li><label><input type="checkbox" name="toppings" value="peppers">Peppers</label></li>
               <li><label><input type="checkbox" name="toppings" value="anchovies">Anchovies</label></li>
             </ul>
+        </fieldset>
 
             <legend>Number</legend>
             <legend>How many pizzas?</legend> 
