@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <meta charset="utf-8">
+        <head>
+          <title>Northpier Hero Association</title>
+            <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+              <style>
+              body {
+                font-family: sans-serif;
+                letter-spacing: 1px;
+              }
+              .banner {
+                width: 100%;
+                color: white;
+                background-color: #2a5e91;
+                padding-top: 35px;
+                padding-bottom: 45px;
+                box-shadow: 5px 20px #9aa0a6;
+                top: -25px;
+                left: 1px;
+                position: fixed;
+                transform: rotate(-2deg);
+                overflow: hidden;
+              }
+              h1 {
+                text-align: right;
+                margin-right: 50px;
+                letter-spacing: 5px;
+                font-family: 'Days One', sans-serif;
+                text-transform: uppercase;
+                transform: rotate(2deg);
+              }
+              .nav {
+                text-align: center;
+                height: 100%;
+                width: 300px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                box-sizing: border-box;
+                padding-top: 20px;
+                padding-left: 5px;
+                background-color: #1e2024;
+                position: fixed;
+                letter-spacing: 1px;
+              }
+              .btn {
+                border: none;
+                outline: none;
+                padding: 10px 16px;
+                background-color: #f1f1f1;
+                cursor: pointer;
+                width: 15em;
+                text-align: left;
+              }
+              .active, .btn:hover {
+                background-color: #4298ed;
+                color: white;
+              }
+              .time {
+                text-align: right;
+              }
+              .winter {
+                width: 25%;
+                height: inherit;
+                float: right;
+                padding: 10px;
+              }
+              .logo {
+                border-radius: 50%;
+                width: 60%;
+                height: auto;
+              }
+              .readmore {
+                background-color: white;
+                outline: none;
+                border: none;
+              }
+              .readmore:hover {
+                color: blue;
+                cursor: pointer;
+                background-color: white;
+                outline: none;
+                border: none;
+              }
+              #wrapperDiv {
+                width: 800px;
+                margin-left: 400px;
+                margin-top: 250px;
+              }
+              .card {
+                box-sizing: content-box;
+                border: thin solid gray;
+                border-radius: 15px;
+                width:201px;
+                height: 600px;
+                float: left;
+                text-align: center;
+                margin-right: 30px;
+              }
+              .card:hover {
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                cursor: pointer;
+              }
+              img {
+                border-radius: 10px;
+                text-align: left;
+                border: thin solid black;
+              }
+              .alias {
+                background-color: gray;
+                padding-top: 30px;
+                text-align: center;
+                padding: 5px 0;
+              }
+            </style>
+
+            <script>
+              var btnContainer = document.getElementById("nav");
+              var btns = btnContainer.getElementsByClassName("btn");
+
+              for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                  var current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace(" active", "")
+                  this.className += " active";
+                }
+              }
+
+          </script>
+        </head>
+        <body>
+            <div class="banner">
+              <h1><label>Northpier Hero Association</label></h1>
+            </div>
+                <div id="nav" class="nav">
+                <img src="https://github.com/spazimoto/fid/blob/master/hero/rogues-gallery/np.png?raw=trueg" class="logo" alt="logo">
+                      <p><button class="btn" onclick="window.location.href = 'http://neopets.com/';">Home</button></p>
+                      <p><button class="btn active" onclick="window.location.href = 'link';">Criminal Database</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Services</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Resources</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">History</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Contact Us</button></p>
+                </div>
+
+<!-- page content -->
+              <div id="wrapperDiv">
+                <div class="card">
+                  <img src="https://github.com/spazimoto/fid/blob/master/hero/rogues-gallery/nopicture.png?raw=true">
+                  <label>
+                  <div class="alias"><p><strong>"ASHEN CROW"</strong></p></div>
+                  <p><small>real name unknown</small></p>
+                  <p>WANTED FOR:
+                  <p>UNMONITORED VIGILANTISM</p></label>
+                </div>
+
+                <div class="card">
+                  <img src="https://github.com/spazimoto/fid/blob/master/hero/rogues-gallery/SHRIKE.png?raw=true">
+                  <label>
+                  <div class="alias"><p><strong>"THE CONDUCTOR"</strong></p></div>
+                  <p><small>otherwise known as Jebediah Shrike</small></p>
+                  <p>WANTED FOR:
+                  <p>FIRST DEGREE MURDER, GRAND LARCENY, TERRORISM</p></label>
+                </div>
+
+                <div class="card">
+                  <img src="https://github.com/spazimoto/fid/blob/master/hero/rogues-gallery/damian_card.jpg?raw=true">
+                  <div class="alias"><label><p><strong>"MASTER HEX"</strong></p></div>
+                  <p><small>otherwise known as Damian Hestall</small></p>
+                  <p>WANTED FOR:
+                  <p>CRIMES AGAINST REALITY, PARTICIPATION IN BLACK MAGIC</p></label>
+                </div>
+
+
+              </div>
+        </body>
+  </html>
