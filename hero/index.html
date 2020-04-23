@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <meta charset="utf-8">
+        <head>
+          <title>Northpier Hero Association</title>
+            <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+              <style>
+              body {
+                font-family: sans-serif;
+                letter-spacing: 1px;
+              }
+              .banner {
+                width: 100%;
+                color: white;
+                background-color: #2a5e91;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                box-shadow: 5px 10px #9aa0a6;
+                top: 0;
+                left: 0;
+                position: fixed;
+              }
+              h1 {
+                text-align: right;
+                margin-right: 50px;
+                letter-spacing: 5px;
+                font-family: 'Days One', sans-serif;
+                text-transform: uppercase;
+              }
+              .nav {
+                text-align: center;
+                height: 100%;
+                width: 300px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                box-sizing: border-box;
+                padding-top: 20px;
+                padding-left: 5px;
+                background-color: #1e2024;
+                position: fixed;
+                letter-spacing: 1px;
+              }
+              .btn {
+                border: none;
+                outline: none;
+                padding: 10px 16px;
+                background-color: #f1f1f1;
+                cursor: pointer;
+                width: 10em;
+              }
+              .active, .btn:hover {
+                background-color: #4298ed;
+                color: white;
+              }
+              .intro {
+                box-sizing: content-box;
+                border: thick double white;
+                padding: 20px;
+                margin-left: 350px;
+                margin-top: 175px;
+                border-left:
+              }
+              .time {
+                text-align: right;
+              }
+              .gallery {
+                text-align: center;
+              }
+              .winter {
+                width: 25%;
+                height: inherit;
+                float: right;
+                padding: 10px;
+              }
+              .logo {
+                border-radius: 50%;
+                width: 50%;
+                height: auto;
+              }
+
+            </style>
+
+            <script>
+                function startTime() {
+                var today = new Date();
+                var h = today.getHours();
+                var m = today.getMinutes();
+                var s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =
+                h + ":" + m + ":" + s;
+                var t = setTimeout(startTime, 500);
+              }
+                function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+              }
+              var btnContainer = document.getElementById("nav");
+              var btns = btnContainer.getElementsByClassName("btn");
+
+              for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                  var current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace(" active", "")
+                  this.className += " active";
+                }
+              }
+
+          </script>
+        </head>
+        <body onload="startTime()">
+          <div id="txt" class="time"></div>
+            <div class="banner">
+              <h1><label>Northpier Hero Association</label></h1>
+            </div>
+                <div id="nav" class="nav">
+                <img src="https://giantbomb1.cbsistatic.com/uploads/scale_medium/2/24786/2932514-5093568989-Okumu.jpg" class="logo" alt="logo">
+                      <p><button class="btn active" onclick="window.location.href = 'http://neopets.com/';">Home</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'http://neopets.com/';">News</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Most Wanted</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Services</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Resources</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">History</button></p>
+                      <p><button class="btn" onclick="window.location.href = 'link';">Contact Us</button></p>
+                      <p>Search</p>
+                </div>
+
+<!-- page content -->
+            <div class="intro">
+              <h2>Our Mission</h2>
+                <p><img src="https://images-na.ssl-images-amazon.com/images/I/71sFxCdomIL.jpg" class="winter" alt="placeholder">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam id diam maecenas ultricies mi eget mauris. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Non curabitur gravida arcu ac. Aliquam purus sit amet luctus venenatis. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Convallis posuere morbi leo urna. Amet massa vitae tortor condimentum lacinia quis vel. Ut tortor pretium viverra suspendisse potenti nullam ac. Tortor posuere ac ut consequat semper viverra nam libero. Neque laoreet suspendisse interdum consectetur libero id faucibus. At ultrices mi tempus imperdiet. Neque vitae tempus quam pellentesque nec nam. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Pharetra diam sit amet nisl suscipit adipiscing bibendum. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.
+
+                <p>Pellentesque nec nam aliquam sem. Quis enim lobortis scelerisque fermentum dui faucibus. Placerat orci nulla pellentesque dignissim enim sit amet venenatis. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Augue eget arcu dictum varius duis at. Pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Consectetur adipiscing elit ut aliquam purus sit amet. Velit aliquet sagittis id consectetur purus ut. Amet mauris commodo quis imperdiet massa. Cras semper auctor neque vitae tempus quam. Vitae ultricies leo integer malesuada nunc vel risus. Quis vel eros donec ac odio tempor. Sed odio morbi quis commodo odio aenean sed. Vitae purus faucibus ornare suspendisse sed nisi lacus sed viverra. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Pellentesque habitant morbi tristique senectus et netus et malesuada. Eget sit amet tellus cras adipiscing enim eu. Erat nam at lectus urna duis. Rhoncus dolor purus non enim praesent elementum facilisis leo. Pulvinar proin gravida hendrerit lectus.
+
+                <p>Ac placerat vestibulum lectus mauris ultrices eros in. Aliquam ultrices sagittis orci a. Viverra tellus in hac habitasse platea dictumst. Tincidunt praesent semper feugiat nibh sed pulvinar. Amet commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Aliquet porttitor lacus luctus accumsan tortor. Felis eget velit aliquet sagittis id consectetur purus ut faucibus. Eu facilisis sed odio morbi. Semper viverra nam libero justo laoreet sit amet cursus. Elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Lectus proin nibh nisl condimentum. Senectus et netus et malesuada fames ac. Nunc sed velit dignissim sodales ut. Nibh venenatis cras sed felis eget velit aliquet. Viverra vitae congue eu consequat ac felis donec. Enim eu turpis egestas pretium aenean pharetra magna. Tristique senectus et netus et malesuada fames ac turpis. At auctor urna nunc id cursus metus.
+
+                <p>Enim blandit volutpat maecenas volutpat. Lectus urna duis convallis convallis tellus id interdum velit. Tellus elementum sagittis vitae et. Augue ut lectus arcu bibendum at varius vel pharetra. Erat nam at lectus urna duis convallis convallis tellus. Sociis natoque penatibus et magnis dis parturient. Vitae ultricies leo integer malesuada nunc. Mi bibendum neque egestas congue quisque egestas diam in arcu. Arcu cursus vitae congue mauris rhoncus aenean vel elit. Morbi tempus iaculis urna id volutpat lacus laoreet non. Amet consectetur adipiscing elit duis tristique sollicitudin nibh. Netus et malesuada fames ac turpis.
+
+                <p>Mi sit amet mauris commodo quis imperdiet massa. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Malesuada nunc vel risus commodo viverra maecenas. Lobortis elementum nibh tellus molestie nunc non blandit. In vitae turpis massa sed elementum. Auctor eu augue ut lectus arcu bibendum at varius vel. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Nunc sed velit dignissim sodales ut eu. At tempor commodo ullamcorper a lacus vestibulum sed. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Sit amet aliquam id diam. Neque volutpat ac tincidunt vitae semper quis lectus. Dictum sit amet justo donec enim diam vulputate ut. Est ullamcorper eget nulla facilisi etiam dignissim diam quis. Nisi vitae suscipit tellus mauris a diam maecenas.
+
+                <p>Consectetur adipiscing elit ut aliquam. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. Mattis rhoncus urna neque viverra justo nec ultrices dui. Sed ullamcorper morbi tincidunt ornare massa eget egestas. Quis auctor elit sed vulputate mi sit amet mauris commodo. Tortor at risus viverra adipiscing at in tellus integer feugiat. Varius morbi enim nunc faucibus a pellentesque sit amet. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Diam quis enim lobortis scelerisque fermentum dui faucibus in. Ipsum suspendisse ultrices gravida dictum.
+
+                <p>Interdum varius sit amet mattis. Accumsan tortor posuere ac ut consequat. Sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus. Eget gravida cum sociis natoque. Lacus sed turpis tincidunt id. Egestas sed tempus urna et pharetra pharetra massa massa. Nibh nisl condimentum id venenatis a condimentum. Pellentesque elit eget gravida cum sociis natoque penatibus et magnis. Consequat interdum varius sit amet mattis vulputate enim nulla. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque. Pharetra diam sit amet nisl. Eros in cursus turpis massa. Nulla facilisi etiam dignissim diam. Id nibh tortor id aliquet lectus proin nibh. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum.
+
+                <p>Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Blandit turpis cursus in hac habitasse. Suscipit adipiscing bibendum est ultricies integer quis auctor. Tincidunt vitae semper quis lectus nulla at. Pharetra sit amet aliquam id. Tempor nec feugiat nisl pretium. Tortor vitae purus faucibus ornare suspendisse. Tincidunt vitae semper quis lectus nulla at volutpat. Id venenatis a condimentum vitae sapien pellentesque habitant. Egestas sed tempus urna et pharetra pharetra massa massa ultricies. Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend. Morbi tristique senectus et netus et malesuada fames ac. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque. Nibh nisl condimentum id venenatis a.
+
+                <p>Pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada. Condimentum id venenatis a condimentum vitae sapien. Pellentesque eu tincidunt tortor aliquam nulla. Ut ornare lectus sit amet est placerat. Mauris a diam maecenas sed enim ut sem viverra aliquet. Gravida dictum fusce ut placerat orci nulla. Quisque egestas diam in arcu cursus euismod quis viverra. Leo vel fringilla est ullamcorper. Tempus egestas sed sed risus pretium quam vulputate dignissim suspendisse. Sit amet porttitor eget dolor morbi non. Ut aliquam purus sit amet luctus venenatis. Eget nunc lobortis mattis aliquam faucibus purus. Cursus turpis massa tincidunt dui ut ornare lectus sit. Bibendum enim facilisis gravida neque convallis. Sagittis purus sit amet volutpat consequat mauris. Sed viverra ipsum nunc aliquet. Congue nisi vitae suscipit tellus mauris a diam.
+
+                <p>In cursus turpis massa tincidunt dui ut. Non consectetur a erat nam. Sed euismod nisi porta lorem mollis. Egestas integer eget aliquet nibh praesent tristique magna sit. Odio eu feugiat pretium nibh. Mauris augue neque gravida in fermentum et sollicitudin. Leo vel fringilla est ullamcorper eget. Quam pellentesque nec nam aliquam sem et tortor consequat id. Eu turpis egestas pretium aenean pharetra magna ac. Lacinia quis vel eros donec ac odio. Pulvinar neque laoreet suspendisse interdum consectetur. Et tortor at risus viverra adipiscing at in tellus integer. Aenean sed adipiscing diam donec adipiscing tristique. Amet purus gravida quis blandit. Consectetur a erat nam at. Sollicitudin tempor id eu nisl nunc mi.
+                </p>
+            </div>
+
+            <div class="gallery">
+                <img src="" alt="">
+            </div>
+        </body>
+  </html>
